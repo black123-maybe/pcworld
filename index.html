@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC World - Reparación y Mantenimiento</title>
+  <style>
+    :root {
+      --primary-color: #004080;
+      --secondary-color: #003060;
+      --accent-color: #007bff;
+      --light-bg: #f5f5f5;
+      --text-color: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      background-image: linear-gradient(to bottom, #004080, #003060);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: 15px;
+      opacity: 0.9;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .service-item {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-item img {
+      width: 70px;
+      margin-bottom: 15px;
+    }
+
+    .service-item p {
+      font-size: 1.05em;
+    }
+
+    #nosotros p {
+      font-size: 1.15em;
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    form textarea {
+      resize: vertical;
+      height: 140px;
+    }
+
+    .btn {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1em;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .footer-icons {
+      margin-top: 15px;
+    }
+
+    .footer-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .footer-icons img {
+      width: 28px;
+      height: 28px;
+      filter: brightness(0) invert(1);
+      transition: transform 0.3s;
+    }
+
+    .footer-icons img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PC World</h1>
+    <p>Tu lugar de confianza para reparar, optimizar y mantener tu computadora al máximo rendimiento.</p>
+  </header>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service-item">
+        <a href="reparacion.html">
+          <img src="logos/armado.png" alt="Reparación">
+          <p>Reparación y mantenimiento de PC</p>
+        </a>
+      </div>
+      <div class="service-item">
+        <a href="armado.html">
+          <img src="logos/reparacion.png" alt="Armado">
+          <p>Armado de equipos a medida</p>
+        </a>
+      </div>
+      <div class="service-item">
+        <a href="instalacion.html">
+          <img src="logos/instalacion.png" alt="Instalación">
+          <p>Instalación de software y hardware</p>
+        </a>
+      </div>
+      <div class="service-item">
+        <a href="limpieza.html">
+          <img src="logos/limpieza.png" alt="Limpieza">
+          <p>Limpieza interna y externa de equipos</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2>Nosotros</h2>
+    <p>En PC World, nos especializamos en mantenimiento, reparación y optimización de computadoras para que funcionen al máximo rendimiento. Brindamos soluciones rápidas y personalizadas tanto para usuarios particulares como para pequeñas empresas. Con años de experiencia, ofrecemos diagnósticos precisos, repuestos de calidad y un trato cercano. Nuestra pasión es ayudarte a alargar la vida útil de tus equipos y mantenerlos siempre al 100%.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p style="text-align: center;">¿Necesitás ayuda con tu PC? Escribinos:</p>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Consultanos ..." required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PC World - Todos los derechos reservados</p>
+    <div class="footer-icons">
+      <a href="https://wa.me/59893382968" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.instagram.com/pcworlduy/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+      </a>
+      <a href="https://www.google.com/maps/place/Ciudad+del+Plata,+Departamento+de+San+Jos%C3%A9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Ubicación">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
